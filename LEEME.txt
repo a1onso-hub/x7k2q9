@@ -1,0 +1,9 @@
+Coloca aquí dentro:
+
+- foto-01.jpg, foto-02.jpg, foto-03.jpg... (las imágenes exportadas de Canva,
+  numeradas en el orden en que quieres que aparezcan)
+- musica.mp3 (la canción de fondo)
+
+Los nombres deben coincidir exactamente con los que aparecen en index.html.
+Puedes usar más o menos fotos: solo tienes que copiar/pegar bloques
+<section class="slide">...</section> en index.html por cada foto nueva.

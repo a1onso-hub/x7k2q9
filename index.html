@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Evita que buscadores indexen esta página: solo se llega por enlace directo -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Álbum de viaje</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pantalla de inicio: los navegadores no dejan reproducir audio con sonido
+       hasta que la persona interactúa, así que empezamos aquí -->
+  <div id="portada">
+    <p class="portada-eyebrow">Un álbum de recuerdos</p>
+    <h1 id="portada-titulo">Nuestro viaje</h1>
+    <button id="btn-entrar">Abrir álbum</button>
+  </div>
+
+  <main id="album" hidden>
+
+    <section class="slide" data-index="0">
+      <img src="assets/foto-01.jpg" alt="Descripción de la foto 1">
+    </section>
+
+    <section class="slide" data-index="1">
+      <img src="assets/foto-02.jpg" alt="Descripción de la foto 2">
+    </section>
+
+    <section class="slide" data-index="2">
+      <img src="assets/foto-03.jpg" alt="Descripción de la foto 3">
+    </section>
+
+    <!--
+      Para añadir más páginas, copia y pega un bloque <section class="slide">...
+      y súbelas correlativamente numerando data-index (0, 1, 2, 3...)
+      y el nombre del archivo (foto-04.jpg, foto-05.jpg...)
+    -->
+
+    <button id="btn-prev" class="nav" aria-label="Página anterior">‹</button>
+    <button id="btn-next" class="nav" aria-label="Página siguiente">›</button>
+
+    <div id="barra-inferior">
+      <span id="contador">1 / 1</span>
+      <button id="btn-mute" aria-label="Silenciar música">♪</button>
+    </div>
+
+  </main>
+
+  <audio id="musica" src="assets/musica.mp3" loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
