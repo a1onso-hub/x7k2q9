@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Álbum de viaje</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="portada">
+    <p class="portada-eyebrow">Con cariño de Alonso</p>
+    <h1 id="portada-titulo">Álbum de recuerdos</h1>
+    <button id="btn-entrar">Abrir</button>
+  </div>
+
+  <main id="album" hidden>
+
+    <section class="slide" data-index="0">
+      <img src="assets/foto-01.png" alt="Descripción de la foto 1">
+    </section>
+
+    <section class="slide" data-index="1">
+      <img src="assets/foto-02.png" alt="Descripción de la foto 2">
+    </section>
+
+    <section class="slide" data-index="2">
+      <img src="assets/foto-03.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="3">
+      <img src="assets/foto-04.png" alt="Descripción de la foto 3">
+    </section>   
+      
+    <section class="slide" data-index="4">
+      <img src="assets/foto-05.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="5">
+      <img src="assets/foto-06.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="6">
+      <img src="assets/foto-07.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="7">
+      <img src="assets/foto-08.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="8">
+      <img src="assets/foto-09.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="9">
+      <img src="assets/foto-10.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="10">
+      <img src="assets/foto-11.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="11">
+      <img src="assets/foto-12.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="12">
+      <img src="assets/foto-13.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="13">
+      <img src="assets/foto-14.png" alt="Descripción de la foto 3">
+    </section>
+      
+    <section class="slide" data-index="14">
+      <img src="assets/foto-15.png" alt="Descripción de la foto 3">
+    </section>
+
+    <section class="slide" data-index="15">
+      <video src="assets/video.mp4" muted loop autoplay playsinline></video>
+    </section>
+
+    <button id="btn-prev" class="nav" aria-label="Página anterior">‹</button>
+    <button id="btn-next" class="nav" aria-label="Página siguiente">›</button>
+
+    <div id="barra-inferior">
+      <span id="contador">1 / 1</span>
+      <button id="btn-mute" aria-label="Silenciar música">♪</button>
+    </div>
+
+  </main>
+
+  <audio id="musica" src="assets/musica.mp3" loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
